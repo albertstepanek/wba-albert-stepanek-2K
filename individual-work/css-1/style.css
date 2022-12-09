@@ -1,0 +1,28 @@
+h1{
+    color: #F39C12;
+    size: 30px  ;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+p.ahoj {
+
+   font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: normal;
+    color: #0000FF;
+}
+p.cau {
+
+    font-family: 'Courier New', Courier, monospace;
+     font-size: 16px;
+     font-weight: normal;
+     color: #0000FF;
+ }
+ h2.hh {
+
+    color: #00FF00
+    ;
+    
+ }
