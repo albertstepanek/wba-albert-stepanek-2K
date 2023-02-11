@@ -22,6 +22,7 @@ width: 100px  ;
   flex-direction: row;
   justify-items: space-between;
 padding: 5%;
+position: sticky;
 
 }
 .nav-item {
