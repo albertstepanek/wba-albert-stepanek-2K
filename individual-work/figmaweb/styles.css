@@ -3,7 +3,6 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
-  margin-top: 20px;
   margin-bottom: 20px;
   background-color: #CBC1B1;
 }
@@ -46,4 +45,8 @@
   flex-direction: row;
   order: 1;
   font-family: "Lato";
+}
+
+body {
+  margin: 0;
 }/*# sourceMappingURL=styles.css.map */
