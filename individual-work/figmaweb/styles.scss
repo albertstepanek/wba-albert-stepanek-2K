@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
 .header {
     padding: 0 70px;
     display: flex;
@@ -21,6 +24,10 @@
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    
+    
   }
 
   .row {
@@ -29,6 +36,7 @@
     flex-direction: row;
     justify-content: center;
     width: 90%;
+    margin: 0 auto;
    
     
 
@@ -58,12 +66,24 @@
   display: flex;
   flex-direction: row;
   order: 1;
-  font-family: 'Lato';
-  
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
   
 }
 
 body {
   margin: 0;
+  background-color:#edece8 ;
+
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #cbc1b1;
+  
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
