@@ -10,7 +10,7 @@
 
 .nav {
   display: flex;
-  align-content: center;
+  align-self: center;
   justify-content: center;
   gap: 60px;
   list-style-type: none;
@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 5rem;
 }
 
 .column {
