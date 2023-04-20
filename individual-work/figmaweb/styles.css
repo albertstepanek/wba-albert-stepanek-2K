@@ -7,16 +7,14 @@
   margin-bottom: 20px;
   background-color: #CBC1B1;
 }
-
-.nav {
+.header .nav {
   display: flex;
   align-self: center;
   justify-content: center;
   gap: 60px;
   list-style-type: none;
 }
-
-.nav li a {
+.header .nav li a {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
@@ -62,7 +60,40 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #cbc1b1;
+  background-color: #CBC1B1;
   text-align: center;
   font-family: "Lato", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  .nav {
+    gap: 20px;
+  }
+  .nav li a {
+    font-size: 1rem;
+  }
+  .row {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .column {
+    justify-content: space-around;
+  }
+  .style {
+    display: flex;
+    width: 80%;
+    padding: 5vh;
+  }
+  .aha {
+    order: 2;
+    margin-left: 10px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
 }/*# sourceMappingURL=styles.css.map */

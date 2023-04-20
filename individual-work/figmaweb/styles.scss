@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+$header-bg-color: #CBC1B1;
+$text-color: black;
+$font-family: 'Lato', sans-serif;
+$font-weight: 800;
 
 .header {
     padding: 0 70px;
@@ -8,73 +12,56 @@
     justify-content: space-between;
 
     margin-bottom: 20px;
-    background-color: #CBC1B1;
+    background-color: $header-bg-color;
 
-  }
+    .nav {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        gap: 60px;
+        list-style-type: none;
 
-.nav {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    gap: 60px;
-    list-style-type: none;
-  }
+        li a {
+            text-decoration: none;
+            color: $text-color;
+            font-size: 1.2rem;
+            font-family: $font-family;
+            font-weight: $font-weight; 
+        }
+    }
+}
 
-.nav li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 800;
-    
-    
-  }
-
-  .row {
-
+.row {
     display:flex;
     flex-direction: row;
     justify-content: center;
     width: 90%;
-    margin: 5rem;
-   
-    
+    margin: 5rem; 
+}
 
-  }
-
-  .column {
-
+.column {
     display:flex;
-    flex-direction: column;
-    
-  }
+    flex-direction: column; 
+}
 
- 
 .style{
-
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  
-  
-  
+  width: 80%;  
  padding: 5vh;
 }
 
 .aha {
-
   display: flex;
   flex-direction: row;
   order: 1;
-  font-family: 'Lato', sans-serif;
-  font-weight: 800;
-  
+  font-family: $font-family;
+  font-weight: $font-weight; 
 }
 
 body {
   margin: 0;
   background-color:#edece8 ;
-
 }
 
 footer {
@@ -82,9 +69,48 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #cbc1b1;
-  
+  background-color: $header-bg-color;  
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-family;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .nav {
+    gap: 20px;
+    li a {
+      font-size: 1rem;
+    }
+  }
+
+  .row {
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .column {
+    justify-content: space-around;
+  }
+
+  .style {
+    display: flex;
+    width: 80%;  
+    padding: 5vh;
+    
+  }
+
+  .aha {
+    order: 2;
+    margin-left: 10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
 }
 

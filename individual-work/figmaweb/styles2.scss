@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$header-bg-color: #CBC1B1;
+$text-color: black;
+$font-family: 'Lato', sans-serif;
+$font-weight: 800;
+
+.header {
+    padding: 0 70px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    background-color: $header-bg-color;
+
+    .nav {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        gap: 60px;
+        list-style-type: none;
+
+        li a {
+            text-decoration: none;
+            color: $text-color;
+            font-size: 1.2rem;
+            font-family: $font-family;
+            font-weight: $font-weight; 
+        }
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.nadpis {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    margin: 0;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .field {
+    display: flex;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .big-field {
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .button {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: row;
+  }
