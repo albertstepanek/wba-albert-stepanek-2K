@@ -73,14 +73,19 @@ footer {
   text-align: center;
   font-family: $font-family;
 }
-
+.burgr { 
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .header {
     padding: 0 20px;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav {
+    
     gap: 20px;
     li a {
       font-size: 1rem;
@@ -112,5 +117,17 @@ footer {
     width: 100px;
     height: 100px;
   }
+  .nav li a {
+
+    display: none;
+  }
+  .burgr { 
+    display: block;
+      width: 7.5%;
+      height: 7.5%;
+      align-self: center;
+        flex-direction: row;
+        order: 1;
+    }
 }
 
