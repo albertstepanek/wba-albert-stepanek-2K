@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.header {
+  padding: 0 70px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0;
+  background-color: #CBC1B1;
+}
+.header .nav {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 60px;
+  list-style-type: none;
+}
+.header .nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+
+.content {
+  background-image: url("hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  margin: 0;
+}
+
+.dovolena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 20vw;
+  right: 2vw;
+  margin: 1rem;
+  color: white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background: rgba(124, 116, 116, 0.5);
+}
+
+.nadpis {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 5rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+}
+
+.style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  padding: 5vh;
+}
+
+.para {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  flex-wrap: wrap;
+}
+
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #CBC1B1;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.footertext {
+  margin: 0;
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: #eeede8;
+}
+
+.burgr {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    display: none;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  .nav {
+    gap: 20px;
+  }
+  .nav li a {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .nav li a {
+    display: none;
+  }
+  .burgr {
+    display: flex;
+    width: 7.5%;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=styles3.css.map */

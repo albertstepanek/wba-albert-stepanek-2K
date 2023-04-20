@@ -1,0 +1,174 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$header-bg-color: #CBC1B1;
+$text-color: black;
+$font-family: 'Lato', sans-serif;
+$font-weight: 800;
+
+.header {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+
+    margin: 0;
+    background-color: $header-bg-color;
+
+    .nav {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        gap: 60px;
+        list-style-type: none;
+
+        li a {
+            text-decoration: none;
+            color: $text-color;
+            font-size: 1.2rem;
+            font-family: $font-family;
+            font-weight: $font-weight; 
+        }
+    }
+}
+
+.content {
+    background-image: url('hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height:50vw;
+
+    margin: 0;
+}
+
+
+.dovolena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 20vw;
+  right: 2vw;
+  margin: 1rem;
+  color: white;
+  text-align: center;
+font-family: $font-family;
+background: rgba(124 , 116 , 116, 0.5)
+
+}
+
+.nadpis {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 1rem;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    
+    
+}
+
+.row {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 5rem; 
+}
+
+.column {
+    display:flex;
+    flex-direction: row; 
+}
+
+.style{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;  
+ padding: 5vh;
+ 
+}
+
+.para {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family;
+  font-weight: $font-weight; 
+flex-wrap: wrap;
+
+}
+footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 0 ;
+    width: 100%;
+    
+    background-color: $header-bg-color;  
+    text-align: center;
+    font-family: $font-family;
+  }
+.footertext {
+    margin: 0;
+    margin-top: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #eeede8;
+}
+.burgr {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) { 
+
+.content {
+
+
+    display: none;
+}
+
+.column {
+    display:flex;
+
+    flex-direction: column; 
+
+
+}
+
+.header {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .nav {
+    gap: 20px;
+    li a {
+      font-size: 1rem;
+    }
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav li a {
+
+    display: none;
+  }
+.burgr { 
+    display: flex;
+    width: 7.5%;
+    flex-direction: row;
+}
+
+}

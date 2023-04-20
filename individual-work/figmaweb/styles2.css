@@ -24,6 +24,7 @@
 
 body {
   margin: 0;
+  background-color: #edece8;
 }
 
 .nadpis {
@@ -40,31 +41,38 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
 }
 
 .field {
   display: flex;
-  margin: 10px;
-  width: 300px;
+  margin: 1vw;
+  width: 25vw;
   height: 30px;
-  border: 1px solid black;
+  background-color: #ccc9c5;
   padding: 5px;
+  border: none;
 }
 
 .big-field {
   margin: 10px;
-  width: 300px;
-  height: 100px;
-  border: 1px solid black;
+  width: 52.5vw;
+  height: 15vh;
+  border: none;
   padding: 5px;
+  background-color: #ccc9c5;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
 }
 
 .button {
   margin: 10px;
   width: 100px;
   height: 30px;
-  background-color: blue;
-  color: white;
+  background-color: #ccc9c5;
+  color: #7c7474;
   border: none;
   cursor: pointer;
 }
@@ -72,4 +80,44 @@ body {
 .column {
   display: flex;
   flex-direction: row;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #CBC1B1;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  .nav {
+    gap: 20px;
+  }
+  .nav li a {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .field {
+    width: 60vw;
+  }
+  .big-field {
+    width: 60vw;
+  }
+  .button {
+    margin-top: 5vh;
+  }
 }/*# sourceMappingURL=styles2.css.map */
